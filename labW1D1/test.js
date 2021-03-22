@@ -2,8 +2,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable require-jsdoc */
 "use strict";
-const assert = require('assert');
-
 function mochaTests() {
     describe("pow", function () {
         it("raises to n-th power", function () {

@@ -31,19 +31,19 @@ function add(...args) {
 */
 
 function computeGrade(grades) {
-	let total = 0;
+	let sum = 0;
 	let average = 0; 
 	for (let scores of grades) {
 		sum += scores;
 }
-	average = total / grades.length;
+	average = sum / grades.length;
 	if (average >= 90) {
 		return "A";
 	} else if (average > 79) {
 		return "B";
 	} else if (average > 69) {
 		return "C";
-	} else if (averge >60) {
+	} else if (average >60) {
 		return "D";
 	} else {
 		return "NC";
