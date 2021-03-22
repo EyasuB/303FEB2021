@@ -1,7 +1,6 @@
 /* eslint-disable require-jsdoc */
 /* eslint-disable no-unused-vars */
 "use strict";
-exports.computeGrade = computeGrade;
 
 function pow(x, n) {
 	return x * n;
