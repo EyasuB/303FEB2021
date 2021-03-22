@@ -43,7 +43,7 @@ function computeGrade(grades) {
 		return "B";
 	} else if (average > 69) {
 		return "C";
-	} else if (average >60) {
+	} else if (average >59) {
 		return "D";
 	} else {
 		return "NC";
