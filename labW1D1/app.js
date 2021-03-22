@@ -1,6 +1,7 @@
 /* eslint-disable require-jsdoc */
 /* eslint-disable no-unused-vars */
 "use strict";
+exports.computeGrade = computeGrade;
 
 function pow(x, n) {
 	return x * n;
@@ -29,7 +30,26 @@ function add(...args) {
 	60 - 69  D
 	0 - 59   NC
 */
+
 function computeGrade(grades) {
-	return "???";
+	let total = 0;
+	let average = 0; 
+	for (let scores of grades) {
+		sum += scores;
 }
+	average = total / grades.length;
+	if (average >= 90) {
+		return "A";
+	} else if (average > 79) {
+		return "B";
+	} else if (average > 69) {
+		return "C";
+	} else if (averge >60) {
+		return "D";
+	} else {
+		return "NC";
+	}
+
+}
+computeGrade();
 
