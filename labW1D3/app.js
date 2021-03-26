@@ -34,25 +34,26 @@ function analyzer() {
 
 	let outputObject = {};
 	let key = Object.keys(this);
-		
 	outputObject.numProperties=key.length;
 
-		let count = 0;
-		for (let elements of Object.keys(this)) {
+	let nameCount = 0;
+	for (let elements of Object.keys(this)) {
 			
-			if (elements.length < 3)  count++;
+		if (elements.length < 3)  
+		{nameCount++;}
 				
 			
 	}
-	outputObject.cntShortName = count;
+	outputObject.cntShortName = nameCount;
+
 	// Let's count the values in the object
-		let countval = 0;
-		for (let element of Object.values(this)) {
-			if (typeof element==="object") {
-				countval++;
-			}
+	let countvalues = 0;
+	for (let element of Object.values(this)) {
+		if (typeof element==="object") {
+			countvalues++;
 		}
-	outputObject.cntReference=countval;
+	}
+	outputObject.cntReference=countvalues;
 	return outputObject;
 	}
 	
