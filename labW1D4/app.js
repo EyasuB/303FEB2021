@@ -74,17 +74,20 @@ console.log(makePositive([-1, 3,'a', 4, -5]));
 // Replaces sequences of 0s with an "*", e.g.
 // removeZeros([3, 0, 0, 0, 5, 6, 0, 0, 7, 0]) returns [3, "*", 5, "*", 7, "*"];
 function removeZeros(array) {
-	let str ="*"; 
-	let newarr=[];
-
-for(let element of array){
-	if(element ===0){
-	element+=str;
-	} else {
-	newarr.push(element);	
-	}
+	for (let i = 0; i <array.length-1; i++) {
+    if (array[i] == 0) {
+        array.splice(i, 1);
+        //josharray[i] = '*';
+    }
+	
 }
-return newarr;
+for (let i = 0; i < array.length;i++) {
+    if (array[i] === 0) {
+        array[i] = '*';
+    }
 }
+return array;
+}
+console.log(removeZeros([3, 0, 0, 0, 5, 6, 0, 0, 7, 0]))
 
 
